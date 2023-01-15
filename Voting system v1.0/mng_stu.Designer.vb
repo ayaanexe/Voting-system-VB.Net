@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class mng_stu
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class Mng_stu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class mng_stu
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -36,15 +36,9 @@ Partial Class mng_stu
         Me.Guna2TabControl1 = New Guna.UI2.WinForms.Guna2TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.srch_bar = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.srch_btn = New Guna.UI2.WinForms.Guna2TextBox()
         Me.reg_stu = New Guna.UI2.WinForms.Guna2Button()
         Me.year = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.crs = New Guna.UI2.WinForms.Guna2ComboBox()
@@ -54,6 +48,7 @@ Partial Class mng_stu
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.src_std = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.Guna2TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -177,7 +172,6 @@ Partial Class mng_stu
         Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.Guna2DataGridView1.ColumnHeadersHeight = 19
         Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -187,13 +181,13 @@ Partial Class mng_stu
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.Location = New System.Drawing.Point(0, 33)
+        Me.Guna2DataGridView1.Location = New System.Drawing.Point(0, 36)
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
         Me.Guna2DataGridView1.ReadOnly = True
         Me.Guna2DataGridView1.RowHeadersVisible = False
         Me.Guna2DataGridView1.RowHeadersWidth = 51
         Me.Guna2DataGridView1.RowTemplate.Height = 24
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(774, 446)
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(774, 443)
         Me.Guna2DataGridView1.TabIndex = 1
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -217,67 +211,37 @@ Partial Class mng_stu
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
-        'Column1
-        '
-        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column1.HeaderText = "#"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Width = 43
-        '
-        'Column2
-        '
-        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column2.HeaderText = "Student ID"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Width = 95
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column3.HeaderText = "Name"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'Column4
-        '
-        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column4.HeaderText = "Course"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        Me.Column4.Width = 76
-        '
-        'Column5
-        '
-        Me.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column5.HeaderText = "Year"
-        Me.Column5.MinimumWidth = 6
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        Me.Column5.Width = 60
-        '
-        'Column6
-        '
-        Me.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column6.HeaderText = "Status"
-        Me.Column6.MinimumWidth = 6
-        Me.Column6.Name = "Column6"
-        Me.Column6.ReadOnly = True
-        Me.Column6.Width = 70
-        '
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.Gainsboro
-        Me.Guna2Panel1.Controls.Add(Me.srch_btn)
+        Me.Guna2Panel1.Controls.Add(Me.src_std)
+        Me.Guna2Panel1.Controls.Add(Me.srch_bar)
         Me.Guna2Panel1.Location = New System.Drawing.Point(-5, -4)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(793, 40)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'srch_bar
+        '
+        Me.srch_bar.BorderColor = System.Drawing.Color.Black
+        Me.srch_bar.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.srch_bar.DefaultText = ""
+        Me.srch_bar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.srch_bar.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.srch_bar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.srch_bar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.srch_bar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.srch_bar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.srch_bar.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.srch_bar.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.srch_bar.Location = New System.Drawing.Point(5, 4)
+        Me.srch_bar.Name = "srch_bar"
+        Me.srch_bar.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.srch_bar.PlaceholderForeColor = System.Drawing.SystemColors.ControlDark
+        Me.srch_bar.PlaceholderText = "Search students"
+        Me.srch_bar.SelectedText = ""
+        Me.srch_bar.Size = New System.Drawing.Size(257, 33)
+        Me.srch_bar.TabIndex = 1
         '
         'TabPage2
         '
@@ -297,28 +261,6 @@ Partial Class mng_stu
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Manage Student"
         Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'srch_btn
-        '
-        Me.srch_btn.BorderColor = System.Drawing.Color.Black
-        Me.srch_btn.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.srch_btn.DefaultText = ""
-        Me.srch_btn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.srch_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.srch_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.srch_btn.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.srch_btn.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.srch_btn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.srch_btn.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.srch_btn.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.srch_btn.Location = New System.Drawing.Point(5, 4)
-        Me.srch_btn.Name = "srch_btn"
-        Me.srch_btn.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.srch_btn.PlaceholderForeColor = System.Drawing.SystemColors.ControlDark
-        Me.srch_btn.PlaceholderText = "Search students"
-        Me.srch_btn.SelectedText = ""
-        Me.srch_btn.Size = New System.Drawing.Size(257, 33)
-        Me.srch_btn.TabIndex = 1
         '
         'reg_stu
         '
@@ -456,7 +398,22 @@ Partial Class mng_stu
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Student ID"
         '
-        'mng_stu
+        'src_std
+        '
+        Me.src_std.Animated = True
+        Me.src_std.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.src_std.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.src_std.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.src_std.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.src_std.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.src_std.ForeColor = System.Drawing.Color.White
+        Me.src_std.Location = New System.Drawing.Point(289, 7)
+        Me.src_std.Name = "src_std"
+        Me.src_std.Size = New System.Drawing.Size(122, 27)
+        Me.src_std.TabIndex = 2
+        Me.src_std.Text = "Search"
+        '
+        'Mng_stu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -464,7 +421,7 @@ Partial Class mng_stu
         Me.Controls.Add(Me.Guna2TabControl1)
         Me.Controls.Add(Me.Guna2CustomGradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "mng_stu"
+        Me.Name = "Mng_stu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "mng_candi"
         Me.Guna2CustomGradientPanel1.ResumeLayout(False)
@@ -490,13 +447,7 @@ Partial Class mng_stu
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents srch_btn As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents srch_bar As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents reg_stu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents year As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents crs As Guna.UI2.WinForms.Guna2ComboBox
@@ -506,4 +457,5 @@ Partial Class mng_stu
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents src_std As Guna.UI2.WinForms.Guna2Button
 End Class
