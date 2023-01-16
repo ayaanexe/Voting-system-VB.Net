@@ -26,7 +26,7 @@ Public Class Mng_stu
             Dim dr As SqlDataReader
             dr = cmd.ExecuteReader
             While dr.Read
-                Guna2DataGridView1.Rows.Add(Guna2DataGridView1.Rows.Count + 1, dr.Item("[student id]"), dr.Item("name"), dr.Item("course"), dr.Item("year"), dr.Item("status"))
+                Guna2DataGridView1.Rows.Add(Guna2DataGridView1.Rows.Count + 1, dr.Item("studentid"), dr.Item("name"), dr.Item("course"), dr.Item("year"), dr.Item("status"))
             End While
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -40,13 +40,13 @@ Public Class Mng_stu
     Private Sub Reg_stu_Click(sender As Object, e As EventArgs) Handles reg_stu.Click
         Try
             conn.Open()
-            Dim cmd As New SqlCommand("INSERT INTO [dbo].[stdtbl]
-           ([student id]
-           ,[name]
-           ,[course]
-           ,[year])
-     VALUES
-           ('" + std_id.Text + "','" + std_n.Text + "','" + crs.Text + "','" + year.Text + "')", conn)
+            Dim cmd As New SqlCommand("Insert into 'stdtbl'('studentid','name','course','year','status') values (@studentid,@name,@course,@year,@status)", conn)
+            cmd.Parameters.Clear()
+            cmd.Parameters.AddWithValue("@studentid", std_id.Text)
+            cmd.Parameters.AddWithValue("@name", std_n.Text)
+            cmd.Parameters.AddWithValue("@course", crs.Text)
+            cmd.Parameters.AddWithValue("@year", year.Text)
+            cmd.Parameters.AddWithValue("@status", "UN-VOTED")
             i = cmd.ExecuteNonQuery
             If i > 0 Then
                 MsgBox("Student registered  successfully", vbInformation, "VOTE")
@@ -62,8 +62,8 @@ Public Class Mng_stu
     Private Sub Guna2DataGridView1_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
         filterdata("")
     End Sub
-    Public Sub filterdata(valuetosearch As String)
-        Dim searchquery As String = "Select * from [dbo].[stdtbl] where concat([student id], name, course, year, status) like '%" & valuetosearch & "%'"
+    Public Sub Filterdata(valuetosearch As String)
+        Dim searchquery As String = "Select * from stdtbl where concat(studentid, name, course, year, status) like '%" & valuetosearch & "%'"
         Dim command As New SqlCommand(searchquery, conn)
         Dim adapter As New SqlDataAdapter(command)
         Dim table As New DataTable()

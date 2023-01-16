@@ -74,7 +74,7 @@ Partial Class adminhome
         Me.Guna2Button5.Name = "Guna2Button5"
         Me.Guna2Button5.Size = New System.Drawing.Size(180, 45)
         Me.Guna2Button5.TabIndex = 6
-        Me.Guna2Button5.Text = "Exit"
+        Me.Guna2Button5.Text = "Log Out"
         Me.Guna2Button5.UseTransparentBackground = True
         '
         'Guna2Button4

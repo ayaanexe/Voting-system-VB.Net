@@ -35,8 +35,8 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.lgn_pwd = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.lgn_usr = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -182,58 +182,58 @@ Partial Class Form1
         Me.Guna2Button1.TabIndex = 9
         Me.Guna2Button1.Text = "Forgot Password?"
         '
-        'Guna2TextBox2
+        'lgn_pwd
         '
-        Me.Guna2TextBox2.Animated = True
-        Me.Guna2TextBox2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2TextBox2.BorderColor = System.Drawing.Color.White
-        Me.Guna2TextBox2.BorderRadius = 8
-        Me.Guna2TextBox2.BorderThickness = 0
-        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox2.DefaultText = ""
-        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2TextBox2.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.IconLeft = Global.Voting_system_v1._0.My.Resources.Resources.icons8_password_key_24
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(761, 268)
-        Me.Guna2TextBox2.Name = "Guna2TextBox2"
-        Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.Guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox2.PlaceholderText = ""
-        Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(216, 41)
-        Me.Guna2TextBox2.TabIndex = 2
+        Me.lgn_pwd.Animated = True
+        Me.lgn_pwd.BackColor = System.Drawing.Color.Transparent
+        Me.lgn_pwd.BorderColor = System.Drawing.Color.White
+        Me.lgn_pwd.BorderRadius = 8
+        Me.lgn_pwd.BorderThickness = 0
+        Me.lgn_pwd.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lgn_pwd.DefaultText = ""
+        Me.lgn_pwd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.lgn_pwd.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.lgn_pwd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lgn_pwd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lgn_pwd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lgn_pwd.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.lgn_pwd.ForeColor = System.Drawing.Color.Black
+        Me.lgn_pwd.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lgn_pwd.IconLeft = Global.Voting_system_v1._0.My.Resources.Resources.icons8_password_key_24
+        Me.lgn_pwd.Location = New System.Drawing.Point(761, 268)
+        Me.lgn_pwd.Name = "lgn_pwd"
+        Me.lgn_pwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.lgn_pwd.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.lgn_pwd.PlaceholderText = ""
+        Me.lgn_pwd.SelectedText = ""
+        Me.lgn_pwd.Size = New System.Drawing.Size(216, 41)
+        Me.lgn_pwd.TabIndex = 2
         '
-        'Guna2TextBox1
+        'lgn_usr
         '
-        Me.Guna2TextBox1.Animated = True
-        Me.Guna2TextBox1.BorderColor = System.Drawing.Color.White
-        Me.Guna2TextBox1.BorderRadius = 8
-        Me.Guna2TextBox1.BorderThickness = 0
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.IconLeft = Global.Voting_system_v1._0.My.Resources.Resources.icons8_collaborator_male_32
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(761, 176)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Black
-        Me.Guna2TextBox1.PlaceholderText = ""
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(216, 41)
-        Me.Guna2TextBox1.TabIndex = 1
+        Me.lgn_usr.Animated = True
+        Me.lgn_usr.BorderColor = System.Drawing.Color.White
+        Me.lgn_usr.BorderRadius = 8
+        Me.lgn_usr.BorderThickness = 0
+        Me.lgn_usr.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lgn_usr.DefaultText = ""
+        Me.lgn_usr.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.lgn_usr.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.lgn_usr.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lgn_usr.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lgn_usr.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lgn_usr.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.lgn_usr.ForeColor = System.Drawing.Color.Black
+        Me.lgn_usr.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lgn_usr.IconLeft = Global.Voting_system_v1._0.My.Resources.Resources.icons8_collaborator_male_32
+        Me.lgn_usr.Location = New System.Drawing.Point(761, 176)
+        Me.lgn_usr.Name = "lgn_usr"
+        Me.lgn_usr.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.lgn_usr.PlaceholderForeColor = System.Drawing.Color.Black
+        Me.lgn_usr.PlaceholderText = ""
+        Me.lgn_usr.SelectedText = ""
+        Me.lgn_usr.Size = New System.Drawing.Size(216, 41)
+        Me.lgn_usr.TabIndex = 1
         '
         'Guna2PictureBox1
         '
@@ -261,8 +261,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Guna2GradientButton1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Guna2TextBox2)
-        Me.Controls.Add(Me.Guna2TextBox1)
+        Me.Controls.Add(Me.lgn_pwd)
+        Me.Controls.Add(Me.lgn_usr)
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
@@ -277,8 +277,8 @@ Partial Class Form1
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2ShadowForm1 As Guna.UI2.WinForms.Guna2ShadowForm
-    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents lgn_pwd As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents lgn_usr As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Guna2GradientButton1 As Guna.UI2.WinForms.Guna2GradientButton

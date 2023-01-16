@@ -6,16 +6,16 @@ Public Class Form1
 
     End Sub
 
-    Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
+    Public Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
         If con.State = ConnectionState.Open Then con.Close()
         con.Open()
-        If Guna2TextBox1.Text = "" Then
+        If lgn_usr.Text = "" Then
             MsgBox("Enter User Name", MsgBoxStyle.Critical)
-        ElseIf Guna2TextBox2.Text = "" Then
+        ElseIf lgn_pwd.Text = "" Then
             MsgBox("Enter Password", MsgBoxStyle.Critical)
         Else
             Dim query As String
-            query = "select * from lgnTable where UserName collate latin1_general_cs_as='" + Guna2TextBox1.Text + "'and Password collate latin1_general_cs_as='" + Guna2TextBox2.Text + "'and Type='" + Guna2ComboBox1.SelectedItem + "'"
+            query = "select * from lgnTable where UserName collate latin1_general_cs_as='" + lgn_usr.Text + "'and Password collate latin1_general_cs_as='" + lgn_pwd.Text + "'and Type='" + Guna2ComboBox1.SelectedItem + "'"
             cmd = New SqlCommand(query, con)
             Dim da As SqlDataAdapter = New SqlDataAdapter(cmd)
             Dim ds As New DataSet()
@@ -24,11 +24,11 @@ Public Class Form1
             a = ds.Tables(0).Rows.Count
             If a = 0 Then
                 MsgBox("Login Failed. Enter valid information!", MsgBoxStyle.Critical)
-            ElseIf guna2combobox1.Selecteditem = "Admin" Then
-                adminhome.show()
+            ElseIf Guna2ComboBox1.SelectedItem = "Admin" Then
+                adminhome.Show()
                 Me.Hide()
             ElseIf Guna2ComboBox1.SelectedItem = "Student" Then
-                studenthome.show()
+                studenthome.Show()
                 Me.Hide()
 
             End If
@@ -42,6 +42,10 @@ Public Class Form1
     End Sub
 
     Private Sub Guna2ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Guna2ComboBox1.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub lgn_usr_TextChanged(sender As Object, e As EventArgs) Handles lgn_usr.TextChanged
 
     End Sub
 End Class

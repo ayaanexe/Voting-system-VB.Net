@@ -37,6 +37,7 @@ Partial Class Mng_stu
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.src_std = New Guna.UI2.WinForms.Guna2Button()
         Me.srch_bar = New Guna.UI2.WinForms.Guna2TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.reg_stu = New Guna.UI2.WinForms.Guna2Button()
@@ -48,7 +49,6 @@ Partial Class Mng_stu
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.src_std = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2CustomGradientPanel1.SuspendLayout()
         Me.Guna2TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -146,6 +146,7 @@ Partial Class Mng_stu
         '
         'TabPage1
         '
+        Me.TabPage1.BackColor = System.Drawing.Color.DimGray
         Me.TabPage1.Controls.Add(Me.Guna2DataGridView1)
         Me.TabPage1.Controls.Add(Me.Guna2Panel1)
         Me.TabPage1.Location = New System.Drawing.Point(184, 4)
@@ -154,7 +155,6 @@ Partial Class Mng_stu
         Me.TabPage1.Size = New System.Drawing.Size(770, 485)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Student List"
-        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'Guna2DataGridView1
         '
@@ -181,7 +181,7 @@ Partial Class Mng_stu
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.White
-        Me.Guna2DataGridView1.Location = New System.Drawing.Point(0, 36)
+        Me.Guna2DataGridView1.Location = New System.Drawing.Point(0, 39)
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
         Me.Guna2DataGridView1.ReadOnly = True
         Me.Guna2DataGridView1.RowHeadersVisible = False
@@ -220,6 +220,21 @@ Partial Class Mng_stu
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(793, 40)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'src_std
+        '
+        Me.src_std.Animated = True
+        Me.src_std.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.src_std.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.src_std.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.src_std.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.src_std.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.src_std.ForeColor = System.Drawing.Color.White
+        Me.src_std.Location = New System.Drawing.Point(289, 7)
+        Me.src_std.Name = "src_std"
+        Me.src_std.Size = New System.Drawing.Size(122, 27)
+        Me.src_std.TabIndex = 2
+        Me.src_std.Text = "Search"
         '
         'srch_bar
         '
@@ -397,21 +412,6 @@ Partial Class Mng_stu
         Me.Label1.Size = New System.Drawing.Size(121, 31)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Student ID"
-        '
-        'src_std
-        '
-        Me.src_std.Animated = True
-        Me.src_std.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.src_std.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.src_std.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.src_std.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.src_std.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.src_std.ForeColor = System.Drawing.Color.White
-        Me.src_std.Location = New System.Drawing.Point(289, 7)
-        Me.src_std.Name = "src_std"
-        Me.src_std.Size = New System.Drawing.Size(122, 27)
-        Me.src_std.TabIndex = 2
-        Me.src_std.Text = "Search"
         '
         'Mng_stu
         '

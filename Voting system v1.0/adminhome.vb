@@ -1,10 +1,14 @@
-﻿Public Class adminhome
+﻿Imports Guna.UI2.WinForms
+
+Public Class adminhome
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         mng_users.Show()
     End Sub
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
-        MsgBox("Exit?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
+        MsgBox("Log out?", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation)
         Me.Close()
+        Form1.Show()
+
     End Sub
 
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click

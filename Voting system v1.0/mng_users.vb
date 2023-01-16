@@ -2,7 +2,7 @@
 Public Class mng_users
     Private Sub Guna2GradientButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientButton1.Click
         Dim i As Integer
-        Dim con As New SqlConnection("Data Source=DESKTOP-1E8RE3O\SQLEXPRESS;Initial Catalog=Voting System;Integrated Security=True")
+        Dim con As New SqlConnection("Data Source=AYAAN\SQLEXPRESS;Initial Catalog=Voting System;Integrated Security=True")
         Dim cmd As New SqlCommand("INSERT INTO [dbo].[lgnTable]
            ([UserName]
            ,[Password]

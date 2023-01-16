@@ -197,7 +197,7 @@ Partial Class mng_users
         Me.utyp.ForeColor = System.Drawing.Color.Black
         Me.utyp.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(254, Byte), Integer), CType(CType(118, Byte), Integer), CType(CType(68, Byte), Integer))
         Me.utyp.ItemHeight = 30
-        Me.utyp.Items.AddRange(New Object() {"Admin", "User"})
+        Me.utyp.Items.AddRange(New Object() {"Admin", "Student"})
         Me.utyp.Location = New System.Drawing.Point(227, 303)
         Me.utyp.Name = "utyp"
         Me.utyp.Size = New System.Drawing.Size(225, 36)
