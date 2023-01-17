@@ -18,21 +18,7 @@ Public Class Mng_stu
 
 
     End Sub
-    Sub Load_std_dat()
-        Guna2DataGridView1.Rows.Clear()
-        Try
-            conn.Open()
-            Dim cmd = New SqlCommand("select * from stdtbl", conn)
-            Dim dr As SqlDataReader
-            dr = cmd.ExecuteReader
-            While dr.Read
-                Guna2DataGridView1.Rows.Add(Guna2DataGridView1.Rows.Count + 1, dr.Item("studentid"), dr.Item("name"), dr.Item("course"), dr.Item("year"), dr.Item("status"))
-            End While
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-        conn.Close()
-    End Sub
+
 
     Private Sub Srch_bar_TextChanged(sender As Object, e As EventArgs) Handles srch_bar.TextChanged
 

@@ -15,7 +15,7 @@ Public Class Form1
             MsgBox("Enter Password", MsgBoxStyle.Critical)
         Else
             Dim query As String
-            query = "select * from lgnTable where UserName collate latin1_general_cs_as='" + lgn_usr.Text + "'and Password collate latin1_general_cs_as='" + lgn_pwd.Text + "'and Type='" + Guna2ComboBox1.SelectedItem + "'"
+            query = "select * from lgntable where UserName collate latin1_general_cs_as='" + lgn_usr.Text + "'and Password collate latin1_general_cs_as='" + lgn_pwd.Text + "'and Type='" + Guna2ComboBox1.SelectedItem + "'"
             cmd = New SqlCommand(query, con)
             Dim da As SqlDataAdapter = New SqlDataAdapter(cmd)
             Dim ds As New DataSet()
