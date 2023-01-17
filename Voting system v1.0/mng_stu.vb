@@ -40,7 +40,7 @@ Public Class Mng_stu
     Private Sub Reg_stu_Click(sender As Object, e As EventArgs) Handles reg_stu.Click
         Try
             conn.Open()
-            Dim cmd As New SqlCommand("Insert into 'stdtbl'('studentid','name','course','year','status') values (@studentid,@name,@course,@year,@status)", conn)
+            Dim cmd As New SqlCommand("Insert into stdtbl values (@studentid,@name,@course,@year,@status)", conn)
             cmd.Parameters.Clear()
             cmd.Parameters.AddWithValue("@studentid", std_id.Text)
             cmd.Parameters.AddWithValue("@name", std_n.Text)

@@ -1,6 +1,4 @@
 ﻿Imports System.Data.SqlClient
-Imports System.Drawing.Configuration
-Imports System.Security.AccessControl
 Imports Guna.UI2.WinForms
 Public Class studenthome
     Private WithEvents Pan As New Panel
@@ -51,5 +49,9 @@ Public Class studenthome
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub FlowLayoutPanel4_Paint(sender As Object, e As PaintEventArgs) Handles FlowLayoutPanel4.Paint
+
     End Sub
 End Class
